@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+    </head>
+    <body>
+        <div id="container"></div>
+    </body>
+    <script>
+        Highcharts.chart('container', {
+            chart: {
+                renderTo: 'chart',
+          	    type: 'bar'
+            },
+            title: {
+          	    text: 'Hello Highcharts'
+            },
+            xAxis: {
+          	    categories: ['Hello', 'World']
+            },
+            yAxis: {
+          	    title: 'Value'
+            },
+            series: [{
+          	    name: 'Highcharts Intro',
+          	    data: [1, 2]
+            }]
+        });
+    </script>
+</html>

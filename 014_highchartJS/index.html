@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+        <script>
+            require.config({
+                packages: [{
+                    name: 'highcharts',
+                    main: 'highcharts'
+                }],
+                paths: {
+                    // Change this to your server if you do not wish to use our CDN.
+                    'highcharts': 'https://code.highcharts.com'
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div id="container"></div>
+    </body>
+    <script>
+        require(['highcharts'],function(hi){
+            hi.chart('container', {
+                chart: {
+                    renderTo: 'chart',
+          	         type: 'bar'
+                 },
+                 title: {
+          	          text: 'Hello Highcharts'
+                  },
+                  xAxis: {
+          	           categories: ['Hello', 'World']
+                   },
+                   yAxis: {
+          	            title: 'Value'
+                    },
+                    series: [{
+          	             name: 'Highcharts Intro',
+          	              data: [1, 2]
+                      }]
+                  });
+              });
+    </script>
+</html>
