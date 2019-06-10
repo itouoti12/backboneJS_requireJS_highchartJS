@@ -6,5 +6,5 @@ define(['backbone'], function(backbone) {
         }
     });
 
-    return new HelloWorldModel();
+    return HelloWorldModel;
 });

@@ -1,4 +1,7 @@
 require(['backbone', 'model/HelloWorldModel', 'highcharts'], function(backbone, helloWorldModel, hi) {
+
+    var model = new helloWorldModel();
+
     var HelloWorldView = backbone.View.extend({
         el: $('.hoge'),
         initialize: function() {
@@ -6,7 +9,7 @@ require(['backbone', 'model/HelloWorldModel', 'highcharts'], function(backbone, 
         },
         render: function() {
             this.graph();
-            var text = helloWorldModel.get("text");
+            var text = model.get("text");
             $(this.el).html(_.template($('#hello-template').text())({ "text": text}));
         },
         graph: function() {
