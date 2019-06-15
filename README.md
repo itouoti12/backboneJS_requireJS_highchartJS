@@ -43,12 +43,26 @@ configを設定している。
 config.jsの中からHelloWorldを呼び出している。
 
 #### 007_backboneJS
-
+対象・・・requireJS,backboneJS  
+RequireJSからBackboneJSを使用する。
 
 #### 008_backboneJS
+対象・・・requireJS,backboneJS  
+新たなelementを挿入する
+
+
 #### 009_backboneJS
+対象・・・requireJS,backboneJS  
+initializeを使用して初期描画処理を行う
+
 #### 010_backboneJS
+対象・・・requireJS,backboneJS  
+外部定義されたtemplateを呼び出す
+
 #### 011_backboneJS
+対象・・・requireJS,backboneJS  
+外部定義されたtemplateを呼び出す
+
 #### 012_backboneJS
 #### 013_highchartJS
 #### 014_highchartJS

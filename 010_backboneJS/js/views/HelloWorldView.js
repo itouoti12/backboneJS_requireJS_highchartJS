@@ -1,5 +1,5 @@
 require(['backbone'], function(backbone) {
-    //viewとして適切な分解をする
+    //viewとして適切な分解をし、外部定義されたtemplateを呼び出す。
 
     var HelloWorldView = backbone.View.extend({
         el: $('.hoge'),

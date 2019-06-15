@@ -7,7 +7,8 @@ require(['backbone'], function(backbone) {
             this.render();
         },
         render: function() {
-            $(this.el).html(_.template($('#hello-template').text())({ "text": "Hello World Backbone!!"}));
+            $(this.el).html(_.template($('#hello-template')
+            .text())({ "text": "Hello World Backbone!!"}));
         }
     });
     new HelloWorldView();
